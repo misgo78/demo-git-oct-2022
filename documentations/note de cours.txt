@@ -120,8 +120,71 @@ git add fichier1 fichier2
 git add*.css
 git add*.(css|php|js)
 
-gti add --all 
-gti add --A
+git add --all 
+git add --A
+git add *
 
 ---------------------
 
+gitk => outil visuel qui permet d'avoir les différents commit réalisés
+
+git log
+
+Author: Anthony G <anthonygogomis@gmail.com>
+Date:   Thu Oct 20 11:21:21 2022 +0200
+
+    ajout du fichier style.css
+
+
+
+git log --oneline
+
+619946f (HEAD -> master) formulaire
+40c5d20 ajout du fichier style.css
+7478354 ajout du fichier style.css
+ff31c4a ajout du fichier style.css
+94742a6 ajout du fichier style.css
+0da127f ajout du fichier style.css
+8786a3a ajouter h1 + form
+1593545 creation page index.html
+
+
+
+git log --oneline -p <fichier> pour plus de précision
+
+619946f (HEAD -> master) formulaire
+diff --git a/assets/style.css b/assets/style.css
+index 008cf18..f72f104 100644
+--- a/assets/style.css
++++ b/assets/style.css
+@@ -1,7 +1,7 @@
+ .container{
+     font-family: sans-serif;
+     width: 100%;
+-    max-width: 1200px;
++    max-width: 600px;
+     margin: 0 auto;
+     padding: 0 20px;
+     box-sizing: border-box;
+@@ -9,13 +9,24 @@
+     background-color: blanchedalmond;
+ }
+
+-.input{
++.input,textarea{
+     font-family: sans-serif;
+-    width: 20%;
+-    max-width: 1200px;
+-    margin: 0 auto;
+-    padding: 0 60px;
+:
+
+---------------------
+
+Revenir en arrière
+
+git checkout ==> si on a pas fait de commit ==> effaccer les lignes qui ne sont pas dns le depository pour revenir dans l'état du commit précédent
+git revert numero ==> après avoir effectuer un commit => revenir sur un ancien commit effectué
+git reset numéro de commit --hard ==> supprimer plein de commit et revenir au commit voulu
+
+---------------------
