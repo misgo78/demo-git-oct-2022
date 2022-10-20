@@ -104,7 +104,9 @@ Changes not staged for commit:
  git commit -m "ajout du fichier style.css"
 
  -------------------
-commande qui permet de 
+ 
+commande qui permet de faire le commit
+
 git add <fichier>
 git commit -m "message"
 
@@ -114,6 +116,7 @@ git commit -am "message"
 que sur les fichiers trackés
 
 ---------------------
+Ajouter les fichier à la branche
 
 git add fichier1 fichier2
  
@@ -125,10 +128,11 @@ git add --A
 git add *
 
 ---------------------
+Visualisation des commits
 
 gitk => outil visuel qui permet d'avoir les différents commit réalisés
 
-git log
+git log 
 
 Author: Anthony G <anthonygogomis@gmail.com>
 Date:   Thu Oct 20 11:21:21 2022 +0200
@@ -137,7 +141,7 @@ Date:   Thu Oct 20 11:21:21 2022 +0200
 
 
 
-git log --oneline
+git log --oneline 
 
 619946f (HEAD -> master) formulaire
 40c5d20 ajout du fichier style.css
@@ -199,9 +203,9 @@ git status
 
 git branch mise-en-forme => permet de créer une branche, on peut donner le nom qu'on veut à la branche
 git branch ==> liste des branches
-git checkout mise-en-forme ==> se positionner sur la branche
+git checkout mise-en-forme ==> permet de se positionner sur la branche
 
 git checkout master
 git merge mise-en-forme ==> permet de fusionner la branche avec celle en cours
 
-git branch -d ==> supprimer la branche que l'on viens de fusionner
+git branch -d mise-en-forme ==> supprimer la branche que l'on viens de fusionner
