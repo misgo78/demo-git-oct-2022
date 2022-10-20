@@ -197,9 +197,11 @@ git add --all
 git commit -m "fin"
 git status
 
-git branch mise-en-forme => on peut donner le nom qu'on veut à la branche
+git branch mise-en-forme => permet de créer une branche, on peut donner le nom qu'on veut à la branche
 git branch ==> liste des branches
 git checkout mise-en-forme ==> se positionner sur la branche
 
 git checkout master
-git merge mise-en-forme
+git merge mise-en-forme ==> permet de fusionner la branche avec celle en cours
+
+git branch -d ==> supprimer la branche que l'on viens de fusionner
