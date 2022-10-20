@@ -188,3 +188,10 @@ git revert numero ==> après avoir effectuer un commit => revenir sur un ancien 
 git reset numéro de commit --hard ==> supprimer plein de commit et revenir au commit voulu
 
 ---------------------
+
+monde parallèle à la branch principale
+vérifier que la branche est bien nettoyer
+
+git branch mise-en-forme => on peut donner le nom qu'on veut à la branche
+git branch ==> liste des branches
+git checkout mise-en-forme ==> se positionner sur la branche
