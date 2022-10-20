@@ -1,0 +1,127 @@
+support:
+https://formation.webdevpro.net/git/
+login : git
+password : git
+
+créer 2 dossiers
+
+1.assets => css / javascript/ images
+2.documentation => note de cours
+
+créer un fichier à la racine du projet qui s'appelle index.html
+
+=> git pour pouvoir versionner (suivre les versions / les évolutions de notre projet en HTML / CSS /JS)
+
+------------
+
+commande qui permet de créer un dépôt / repository
+dossier local qui va contenir toutes les évolutions de notre projet
+Attention il faut saisir cette commande en choisissant le PATH de la racine du projet que l'on veut suivre
+
+git init
+
+Initialized empty Git repository in C:/Users/stagiaire/Desktop/git/.git/ en cas de succès
+
+dossier .git (caché par défaut) 
+stocker les différentes versions de votre projet
+on ne manipule pas le contenu de ce dossier !!
+
+git config --global user.name "..."
+git config --global user.email "...@..."
+git config -l
+
+=> modifier le fichier index.html ! enter
+
+ lancer le versionning => suivre l'avancer de tous les fichiers dans le dossier git
+
+ git status
+
+ On branch master => vous êtes sur la branche master
+
+No commits yet => pour l'instant il n'ya pas d'enregistrement commité dans le dossier .git
+
+Untracked files: => fichier non suivi
+  (use "git add <file>..." to include in what will be committed)
+  conseil => si tu veux suivre des fichiers => proposition git add <file>
+        documentations/
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+------------------
+
+git add index.html
+
+------------------
+
+git status
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        documentations/
+
+------------------
+
+git commit -m "creation page index.html"
+
+[master (root-commit) 1593545] creation page index.html
+ 1 file changed, 12 insertions(+) 1 fichier qui a stocké dans le .git
+ create mode 100644 index.html
+
+ chmod 000000
+
+ ------------------
+
+cls/clear => nettoyer le terminal
+
+git status
+
+différence entre le fichier index.html (.git) et le fichier index.html (dans le projet)
+
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+
+  git add index.html
+
+  git commit -m "ajouter h1 + form"
+
+  [master 8786a3a] ajouter h1 + form
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+ -------------------
+
+ créer un fichier style.css
+ modifier le fichier index.html
+
+ git add index.html assets/style.css
+
+ git commit -m "ajout du fichier style.css"
+
+ -------------------
+commande qui permet de 
+git add <fichier>
+git commit -m "message"
+
+git commit -a -m "message"
+git commit -am "message"
+
+que sur les fichiers trackés
+
+---------------------
+
+git add fichier1 fichier2
+ 
+git add*.css
+git add*.(css|php|js)
+
+gti add --all 
+gti add --A
+
+---------------------
+
