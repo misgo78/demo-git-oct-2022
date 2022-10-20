@@ -7,3 +7,13 @@
     box-sizing: border-box;
     border: 2px solid blue;
 }
+
+.input{
+    font-family: sans-serif;
+    width: 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border: 2px solid blue;  
+}
